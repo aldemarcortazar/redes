@@ -28,12 +28,28 @@ class App{
             if(isset($url[1])){
 
                 if(method_exists($controller , $url[1])){
-                    
+                    if(isset($url[2])){
+                        $nparamt = sizeof($url)-2;
+                        $parametros = [];
+                        for ($i = 0; $i < $nparamt; $i++){
+                            array_push($parametros, $url[$i + 2]);
+                        } 
+
+                        $controller->{$url[1]}($parametros); 
+                    }
+                        else{
+                            $controller->{$url[1]}();
+                        }
+                }
+                else{
+                    $controller = new Errores();
                 }
             }
+            else{
+                $controller->render();
+            }
         }else{
-
+            $controller = new Errores();
         }
     }
-
 }
