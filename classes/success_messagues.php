@@ -21,5 +21,4 @@ class SuccessMessagues{
             return false;
         }
     }
-
 }
