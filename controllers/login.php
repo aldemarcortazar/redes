@@ -8,6 +8,9 @@ class Login extends SessionController{
     }
 
     public function render(){
-        
+        $actualLink = trim("$_SERVER[REQUEST_URI]");
+        $url = explode('/' , $actualLink);
+        $this->view->errorMessague = '';
+        $this->view->render('login/index'); 
     }
 }

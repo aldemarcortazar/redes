@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "..\\..\\expenses-app-c"
+		},
+		{
+			"path": "..\\..\\expenses"
+		}
+	],
+	"settings": {}
+}

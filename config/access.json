@@ -1,0 +1,14 @@
+{
+    "sites":[
+        {
+            "site": "",
+            "access": "public",
+            "role": ""
+        }
+    ],
+
+    "default-sites":{
+        "user": "perfil",
+        "admin": "admin"
+    }
+}

@@ -8,6 +8,7 @@ require_once 'classes/error_messagues.php';
 require_once 'classes/success_messagues.php';
 require_once 'classes/session_controller.php';
 require_once 'classes/session.php';
+require_once 'classes/MesssagesManager.php';
 require_once 'libs/app.php';
 new App();
 
