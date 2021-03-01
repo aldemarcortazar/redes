@@ -9,7 +9,7 @@
 </head>
 <body>
     <main>
-        <form>
+        <form action="<?php echo constant('URL');?>login/authentication">
             <h1>Iniciar Sesion</h1>
             <label for="username">Username</label>
             <input type="text" name="username" id="username" class="username">
